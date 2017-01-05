@@ -1,3 +1,5 @@
-export {grid} from './src/grid'
-export {rows} from './src/rows'
-export {columns} from './src/columns'
+import grid from './src/grid'
+import rows from './src/rows'
+import columns from './src/columns'
+
+export {rows, grid, columns}
