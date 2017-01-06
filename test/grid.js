@@ -1,6 +1,6 @@
 /* global describe, it */
-import grid from '../src/grid'
-import {expect} from 'chai'
+const grid = require('../src/grid')
+const expect = require('chai').expect
 
 describe('grid', () => {
   it('should pack in columns', () => {

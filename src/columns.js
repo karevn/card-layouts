@@ -1,5 +1,5 @@
-import parse from './parse'
-import range from './range'
+const parse = require('./parse')
+const range = require('./range')
 
 function build(options) {
   const heights = range(0, options.columns - 1).map(() => { return 0 })
@@ -49,7 +49,7 @@ function equalize(built, options) {
   }
 }
 
-export default function columns (options) {
+module.exports = function columns (options) {
   options = parse(options)
   return equalize(build(options), options)
 }

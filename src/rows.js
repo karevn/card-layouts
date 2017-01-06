@@ -35,7 +35,7 @@ function shrink(row, options) {
   return height
 }
 
-export default function rows (options) {
+module.exports = function rows (options) {
   options = parse(options)
   let row = create(0)
   let items = options.items.map(item => {

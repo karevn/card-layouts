@@ -1,8 +1,6 @@
 /* global describe, it */
-import flow from '../src/rows'
-import {
-  expect
-} from 'chai'
+const flow = require('../src/rows')
+const expect = require('chai').expect
 
 describe('rows', () => {
   const options = {

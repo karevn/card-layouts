@@ -1,5 +1,6 @@
-import parse from './parse'
-export default function grid (options) {
+const parse = require('./parse')
+
+module.exports = function grid (options) {
   options = parse(options)
   const width = ((options.width + options.gap) / options.columns) - options.gap
   const height = options.size.height * (width / options.size.width)

@@ -1,6 +1,6 @@
 /* global describe, it */
-import columns from '../src/columns'
-import {expect} from 'chai'
+const columns = require('../src/columns')
+const expect = require('chai').expect
 
 describe('columns', () => {
   it('should pack', () => {
