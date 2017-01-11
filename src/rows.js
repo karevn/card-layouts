@@ -1,3 +1,5 @@
+import filter from 'array.prototype.filter'
+
 function create(top) {
   return {
     items: [],
@@ -53,9 +55,7 @@ module.exports = function rows (options) {
     return item
   })
   if (row.width < options.width && !options.incomplete) {
-    items = items.filter(item => {
-      return item.y !== row.height
-    })
+    items = filter(items, item => item.y !== row.height)
   }
   return items
 }

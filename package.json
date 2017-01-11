@@ -1,6 +1,6 @@
 {
   "name": "card-layouts",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A simple library for different card layout strategies",
   "main": "index.js",
   "scripts": {
@@ -13,5 +13,8 @@
     "chai": "^3.5.0",
     "chai-shallow-deep-equal": "^1.4.0",
     "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "array.prototype.filter": "^0.1.1"
   }
 }
