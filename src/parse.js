@@ -19,7 +19,7 @@ module.exports = function parse(options) {
     if (options.size.height) {
       options.size.height = Math.floor(options.size.height / factor)
     }
-  } else {
+  } else if (!options.width) {
     options.width = options.columns * options.size.width +
       (options.columns - 1) * options.gap
   }
