@@ -37,8 +37,10 @@ function equalize(built, options) {
     const highest = extreme(built, Math.max)
     const lastInHighest = highest.pop()
     const lastInLowest = lowest[lowest.length - 1]
+    const lowestHeight = built.heights[built.columns.indexOf(lowest)]
+    const highestHeight = built.heights[built.columns.indexOf(highest)]
     if (lowest === highest || !lastInHighest || !lastInLowest ||
-      built.heights[built.columns.indexOf(lowest)] + lastInHighest.height > built.heights[built.columns.indexOf(highest)]) {
+      lowestHeight + lastInHighest.height >= highestHeight) {
       return built.items
     }
     lowest.push(lastInHighest)
