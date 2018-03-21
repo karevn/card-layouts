@@ -1,4 +1,4 @@
-import filter from 'array.prototype.filter'
+import 'array.prototype.filter'
 
 function create(top) {
   return {
@@ -37,7 +37,7 @@ function shrink(row, options) {
   return height
 }
 
-module.exports = function rows (options) {
+export default function rows (options) {
   options = parse(options)
   let row = create(0)
   let items = options.items.map(item => {

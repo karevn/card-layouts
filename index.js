@@ -1,5 +1,5 @@
-const grid = require('./src/grid')
-const rows = require('./src/rows')
-const columns = require('./src/columns')
+import grid from './src/grid'
+import rows from './src/rows'
+import columns from './src/columns'
 
-module.exports = {rows, grid, columns}
+export { grid, rows, columns }

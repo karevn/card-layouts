@@ -1,4 +1,4 @@
-module.exports = function parse(options) {
+export default function parse(options) {
   const defaults = {
     gap: 0,
     items: []
